@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            padding: 20px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Comprehensive HTML Web Page</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#lists">Lists</a>
+        <a href="#tables">Tables</a>
+        <a href="#form">Form</a>
+        <a href="#media">Media</a>
+    </nav>
+
+    <div class="container">
+       
+
+        <!-- Section 6: Frame -->
+        <section id="frames">
+            <h2>Frames</h2>
+           
+            <iframe src="https://www.youtube.com/embed/QVoSgRbd69c"></iframe>
+        </section>
+         <!-- Section 3: Embedded Image -->
+         <section id="images">
+            <h2>Embedded Images</h2>
+            <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/breathtaking-bali-nature-free-photo.jpg?w=600&quality=80/400x200" alt="Sample Image" style="max-width: 100%;">
+        </section>
+
+        <!-- Section 1: Lists -->
+        <section id="lists">
+            <h2>Lists</h2>
+            <p>Types of lists:</p>
+
+            <!-- Unordered List -->
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Cherry</li>
+            </ul>
+
+            <!-- Ordered List -->
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+
+            <!-- Nested List -->
+            <h3>Nested List</h3>
+            <ul>
+                <li>Fruit
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                    </ul>
+                </li>
+                <li>Vegetables
+                    <ul>
+                        <li>Carrot</li>
+                        <li>Peas</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Tables -->
+        <section id="tables">
+            <h2>Tables</h2>
+            <p>Details about persons</p>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Nisschal</td>
+                    <td>20</td>
+                    <td>Banglore</td>
+                </tr>
+                <tr>
+                    <td>Akash</td>
+                    <td>20</td>
+                    <td>Kerala</td>
+                </tr>
+                <tr>
+                    <td>Manikam</td>
+                    <td>35</td>
+                    <td>Karur</td>
+                </tr>
+            </table>
+        </section>
+
+        
+
+        <!-- Section 4: Form -->
+        <section id="form">
+            <h2>Form</h2>
+            <p>User registration:</p>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="cars">Choose a car:</label><br>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Section 5: Media (Video and Audio) -->
+        <section id="media">
+            <h2>Media</h2>
+            
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video><br><br>
+
+           
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2024 My Web Page</p>
+    </footer>
+
+</body>
+</html>
