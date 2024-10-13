@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .completed { text-decoration: line-through; }
+    </style>
+</head>
+<body ng-app="todoApp" ng-controller="TodoController">
+
+    <h1>My Todo List</h1>
+    
+    <input type="text" ng-model="newTask" placeholder="Add a new task" />
+    <button ng-click="addTask()">Add</button>
+
+    <ul>
+        <li ng-repeat="task in tasks">
+            <span ng-class="{'completed': task.completed}">{{ task.name }}</span>
+            <button ng-click="removeTask($index)">Remove</button>
+            <input type="checkbox" ng-model="task.completed" />
+        </li>
+    </ul>
+
+    <p>Total Tasks: {{ tasks.length }}</p>
+
+    <script>
+        var app = angular.module('todoApp', []);
+        
+        app.controller('TodoController', function($scope) {
+            $scope.tasks = [];
+
+            $scope.addTask = function() {
+                if ($scope.newTask) {
+                    $scope.tasks.push({ name: $scope.newTask, completed: false });
+                    $scope.newTask = ''; // Clear the input
+                }
+            };
+
+            $scope.removeTask = function(index) {
+                $scope.tasks.splice(index, 1);
+            };
+        });
+    </script>
+
+</body>
+</html>
