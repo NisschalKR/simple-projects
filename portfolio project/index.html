@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/294267e66d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-removebg-preview (4).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#jobs">Works</a></li>
+                    <li><a href="#portfolio">Projects</a><li>
+                    <li><a href="#contact">Contact<a><li></li> 
+                    <i class="fas fa-times" onclick="closemenu()" id="nav1" ></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="nav1"></i>
+            </nav>
+            <div class="header-text">
+               
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Nisschal KR</span><br>From MCET</h1>
+                
+        </div>
+    </div>
+    <!-------------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/phone background.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Excellent communication abilities, the capacity to lead in a range of contexts, and a strong drive to learn about new trends all come together in me. My time management abilities are exceptional, and I am consistently on time.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>VUE JS</span><br></li>
+                            <li><span>FLUTTER</span><br></li>
+                            <li><span>BOOTSTRAP</span><br></li>  
+                            <li><span>HTML5</span><br></li> 
+                            <li><span>CSS3</span><br></li> 
+                            <li><span>JAVA SCRIPT</span><br></li> 
+                            <li><span>C</span><br></li> 
+                            <li><span>JAVA</span><br></li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>MERN STACK<br>
+                                Xplore IT Corp(06/24 - 07/24)</span><br>I learned about essential elements of contemporary web development technologies while working as an intern in the MERN stack domain.</li>
+                             
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Present</span><br>Bachelor of Information Technology
+                                Dr.Mahalingam college of engineering and technology,
+                                CGPA
+                                8.95</li>
+                            <li><span>2022</span><br>HSC
+                                Cheran Matric HR SEC School,Karur,
+                                Percentage
+                                90%
+                                </li>
+                            <li><span>2020</span><br>SSLC
+                                Cheran Matric HR SEC School,Karur,
+                                Percentage
+                                85%
+                               
+                                </li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------services------------------->
+    <div id="jobs">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>"Craft visually appealing, user-friendly websites with responsive layouts, intuitive navigation, and optimized performance for a seamless user experience.".</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>"Design intuitive, user-centric mobile apps with sleek interfaces, smooth navigation, and seamless functionality for an engaging user experience."</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>"Design intuitive, user-centric interfaces that enhance usability, prioritize accessibility, and deliver an engaging, seamless experience across all platforms."</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/srms.png">
+                    <div class="layer">                
+                            <h3>SRMS Connect</h3>
+                        <p>It is a multifunctionality web application it consists of four modules named as known My Events, AM I Clean , Track My Bus , Student Dashboard
+                           <br><b> Programming Languages used:</b>
+                             Vue JS , Django , DjangoRestFramework ,Vue MaterialUI , Bootstrap</p> <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a></div>
+                            
+
+                </div>
+                <div class="work">
+                    <img src="images/facial.png">
+                    <div class="layer"> 
+                        <h3>SENTIMENTAL ANALYSIS</h3>
+                        <P>The project involves developing a sentiment analysis system that interprets emotions from facial expressions using machine learning techniques.<br>
+                            The implementation will utilize Python and OpenCV for image processing, TensorFlow for model training, and various data visualization tools for analysis and presentation.</P><a href="#"><i class="fa-solid fa-up-right-from-square"></i></a></div>
+                            
+
+                   
+                </div>
+                <div class="work">
+                    <img src="images/robotic.jpeg">
+                    <div class="layer"><h3>HUMAN FOLLOWING ROBOT</h3>
+                        <p> Human Following Robot is an Autonomous Robotic system Designed to track and follow a human target.<br>
+                        These robots typically utilize various sensors such as cameras ,LiDAR, IR sensors to detect and track the presence and movement of a person</p><a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!----------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nisschalkr@gmailcom</p>
+                <p><i class="fa-solid fa-phone"></i>9361652932</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/maya.reghu.92"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/nisschalkr/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B3NJFJ8WtSQi%2F5ergSPO2IQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/home"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/nisschal_kr_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/NisschalKrResume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Nisschal_kr_</i> </p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
