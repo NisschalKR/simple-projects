@@ -18,7 +18,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/simple-project.git
+git clone https://github.com/nisschalkr/simple-project.git
 Navigate to the project directory:
 
 bash
